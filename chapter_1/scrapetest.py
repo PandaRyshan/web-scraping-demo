@@ -13,9 +13,8 @@ except URLError as e:
 else:
     print("It Worked!")
 
-#bs = BeautifulSoup(html.read(), 'html.parser')
+# bs = BeautifulSoup(html.read(), 'html.parser')
 bs = BeautifulSoup(html.read(), 'lxml')
-#print(html.read())
 try:
     badContent = bs.h2
 except AttributeError as e:
